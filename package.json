@@ -1,0 +1,12 @@
+{
+  "name": "ask-my-vibe",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && PORT=3001 node src/app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
